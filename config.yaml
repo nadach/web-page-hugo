@@ -13,36 +13,36 @@ baseURL: "https://www.jonathangilligan.org/"
 indexes:
   category: "categories"
   tag: "tags"
-title: "Jonathan Gilligan"
-copyright: "&copy; 2017 Jonathan Gilligan"
+title: "Nadjib Achir"
+copyright: "&copy; 2024 Nadjib Achir"
 canonifyUrls: false
 relativeUrls: true
 enableRobotsTXT: true
-ignoreFiles: [ "~$", "^\\.", "\\.#", "\\.Rmd$", "_files$", "_cache$", "Corel Auto-Preserve$"]
+ignoreFiles:
+  [
+    "~$",
+    "^\\.",
+    "\\.#",
+    "\\.Rmd$",
+    "_files$",
+    "_cache$",
+    "Corel Auto-Preserve$",
+  ]
 
 menu:
   main:
-      - Name: "Research"
-        URL: "/research/"
-        Weight: 3
-      - Name: "Publications"
-        URL: "/publications/"
-        Weight: 4
-      - Name: "Teaching"
-        URL: "/teaching/"
-        Weight: 5
-      - Name: "Blog"
-        URL: "/post/"
-        Weight: 7
-      - Name: "About"
-        URL: "/about/"
-        Weight: 9
-      - Name: "Creative"
-        URL: "/creative/"
-        Weight: 6
-      - Name: "In The News"
-        URL: "/news/"
-        Weight: 8
+    - Name: "Research"
+      URL: "/research/"
+      Weight: 1
+    - Name: "Publications"
+      URL: "/publications/"
+      Weight: 2
+    # - Name: "Teaching"
+    #   URL: "/teaching/"
+    #   Weight: 3
+    - Name: "News"
+      URL: "/news/"
+      Weight: 4
 permalinks:
   post: /post/:year/:month/:day/:slug
   news: /news/:year/:month/:day/:slug
@@ -85,27 +85,21 @@ markup:
     endLevel: 3
     ordered: false
     startLevel: 2
-# googleAnalytics: "UA-101117636-1"
 params:
-  AuthorName: "Jonathan Gilligan"
+  AuthorName: "Nadjib Achir"
   copyright:
     year: "2006"
-  bio_name: "Jonathan Gilligan"
-  pronouns: "they or he"
-  bio_twitter: "jg_environ"
-  bio_youtube: "UCh3zZ5uI7oZBtpO6kflg_dg"
-  cv_file: "gilligan_cv.pdf"
-  organization: "Vanderbilt University"
-  repository: "https://github.com/jonathan-g/jonathangilligan.hugo"
-  typekitCode: "pxs4bbm"
+  bio_name: "Nadjib Achir"
+  cv_file: "CV_Nadjib_Achir.pdf"
+  organization: "University Sorbonne Paris Nord & INRIA"
   fontawesomePro:
     kit: "536cbb4daa"
     key: "sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU"
   mathjax: true
   mhchem: true
   avatar: "avatar.jpg"
-  front_page_img: "/files/headshots/Gilligan_Jonathan_formal_closeup.jpg"
-  email: "jonathan.gilligan@vanderbilt.edu"
+  front_page_img: "/files/headshots/Nadjib.Achir.jpg"
+  email: "nadjib.achir@inria.fr"
   pubs_count: 4
   teach_count: 2
   post_count: 2
@@ -113,94 +107,47 @@ params:
   news_current_months: 12
   news_post_count: 2
   address:
-    - "<a href=\"https://www.vanderbilt.edu/ees\">Department of Earth &amp; Environmental Sciences</a>,"
-    - "<a href=\"https://www.vanderbilt.edu/\">Vanderbilt University</a><br/>"
-    - "2301 Vanderbilt PL,"
-    - "PMB 351805,<br/>"
-    - "Nashville,"
-    - "TN"
-    - "37235-1805"
+    - '- <a href="https://www.univ-spn.fr/">University Sorbonne Paris Nord</a>,<br/>'
+    - "99 Avenue Jean-Baptiste Clément,<br/>"
+    - "93430 "
+    - "Villetaneuse,<br/>"
+    - "France<br/>"
+    - '- <a href="https://team.inria.fr/tribe/"> TRiBE research team</a>,<br/>'
+    - '<a href="https://www.inria.fr">Inria Saclay - Ile de France</a><br/>'
+    - "1 rue Honore d'Estienne d'Orves,<br/>"
+    - "Campus de l'Ecole Polytechnique,<br/>"
+    - "91120 Palaiseau,"
+    - "France"
   social:
-    phone:
-      priority: 1
-      icon: "phone"
-      icon_pack: "fa"
-      icon_weight: "s"
-      text: "615.322.2420"
-    email:
+    email1:
       priority: 2
       icon: "envelope"
       icon_pack: "fa"
       icon_weight: "s"
-      link: "mailto:jonathan.gilligan@vanderbilt.edu"
-      text: "jonathan.gilligan@vanderbilt.edu"
-    twitter:
-      priority: 4
-      icon: "twitter"
+      link: "mailto:nadjib.achir@inria.fr"
+      text: "nadjib.achir@inria.fr"
+    email2:
+      priority: 1
+      icon: "envelope"
       icon_pack: "fa"
-      icon_weight: "b"
-      link: "https://twitter.com/jg_environ"
-      text: "@jg_environ"
-      on_site: "Twitter"
-      rel_me: yes
-      social_media: yes
-    bluesky:
-      priority: 5
-      link: "https://bsky.app/profile/jgilligan.org"
-      text: "@jgilligan.org"
-      on_site: "Bluesky"
-      rel_me: yes
-      social_media: yes
-    mastodon:
-      priority: 11
-      icon: "mastodon"
-      icon_pack: "fa"
-      icon_weight: "b"
-      link: "https://mathstodon.xyz/@jg_environ"
-      text: "@jg_environ@mathstodon.xyz"
-      on_site: "Mastodon"
-      rel_me: yes
-      social_media: yes
-    youtube:
-      priority: 10
-      icon: "youtube-square"
-      icon_pack: "fa"
-      icon_weight: "b"
-      link: "https://www.youtube.com/@jonathangilliganresearch1730/playlists"
-      text: "Youtube channel"
-      long_text: "YouTube channel for research talks"
-      rel_me: yes
-      social_media: yes
-    github:
-      priority: 9
-      icon: "github"
-      icon_pack: "fa"
-      icon_weight: "b"
-      link: "https://github.com/jonathan-g"
-      text: "jonathan-g"
-      on_site: "GitHub"
-      rel_me: yes
+      icon_weight: "s"
+      link: "mailto:nadjib.achir@univ-paris13.fr"
+      text: "nadjib.achir@univ-paris13.fr"
     orcid:
       priority: 7
       icon: "orcid"
       icon_pack: "ai"
-      link: "https://orcid.org/0000-0003-1375-6686"
-      text: "0000-0003-1375-6686"
+      link: "https://orcid.org/0000-0002-5449-948X"
+      text: "0000-0002-5449-948X"
       site: "ORCID:"
-      rel_me: yes
-    ssrn:
-      priority: 8
-      link: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=954061"
-      text: "954061"
-      site: "SSRN ID:"
       rel_me: yes
     google_scholar:
       priority: 6
       icon: "google-scholar"
       icon_pack: "ai"
-      link: "https://scholar.google.com/citations?user=B8RVAU0AAAAJ"
+      link: "https://scholar.google.fr/citations?user=fL5sKqMAAAAJ&hl=fr"
       text: "Google Scholar"
       rel_me: yes
 taxonomies:
   - category: "categories"
-  - tag:      "tags"
+  - tag: "tags"

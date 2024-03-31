@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-author: "Jonathan Gilligan"
+author: "Nadjib Achir"
 date: {{ .Date }}
 draft: true
 categories:
